@@ -1,0 +1,103 @@
+  <!--
+  <div class="fixed"> 
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+      
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-center">
+            <li class="active"><a href="#">Acerca de mí <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Contacto</a></li>    
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->    
+    </nav>
+  </div>
+
+  /* 
+  funcionalidad de tabs dinamicos
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+    $('.nav-tabs a').on('shown.bs.tab', function(event){
+        var x = $(event.target).text();         // active tab
+        var y = $(event.relatedTarget).text();  // previous tab
+        $(".act span").text(x);
+        $(".prev span").text(y);
+    });
+});
+</script> */
+
+
+/¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨´
+
+<!-- tab dinámico -->
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#home">Resumen</a></li>
+        <li><a href="#menu1">Educación</a></li>
+        <li><a href="#menu2">Herramientas</a></li>
+        <li><a href="#menu3">Actitudes</a></li>      
+      </ul>    
+      <div class="tab-content">
+        <!--  Tab Resumen -- >
+        <div id="home" class="tab-pane fade in active">
+          <div class ="row">
+            <div class= "col-xs-12  col-sm-6">
+              <img class="img-circle" src="assets/images/foto.jpg" alt="">
+            </div>    
+            <div class="col-xs-12  col-sm-6 resum">
+              <h3>Yenny Elizabeth Quiñones Jauregui</h3>
+              <p>Soy bachiller en ingeniería de sistemas e informática. Actual Estudiante de Laboratoria en 
+                la especialización de Diseñador de Experiencia de Usuario. Con conocimientos de back-end, 
+                front-end, research, procesos, calidad, proyectos, planificación estratégica e inteligencia
+                de negocios. Experiencia en atención al cliente, contacto con usuarios internos y elaboración
+                de prototipos. Quiero crear productos digitales de alto impacto en experiencia de usuario, 
+                para toda empresa indistintamente de su rubro.</p>
+            </div>  
+          </div>     
+        </div>
+        <!--  Tab Educación -- >
+        <div id = "menu1" class="tab-pane fade">
+          <div class ="row">
+            <div class = "col-xs-12  col-sm-6">
+              <div class = "row">
+                <img class= "col-xs-4 col-sm-4 img-responsive img-rounded" src="assets/images/laboratoria.png" alt="">
+                <img class= "col-xs-4 col-sm-4 img-responsive img-rounded" src="assets/images/sgs.jpg" alt="">
+                <img class= "col-xs-4 col-sm-4 img-responsive img-rounded" src="assets/images/uap.jpg" alt="">
+              </div>
+            </div>
+            <div class= "col-xs-12  col-sm-6 education">
+              <h3>Educación</h3>
+              <p> ESTUDIANTE - DISEÑADO DE EXPERIENCIA DE USUARIO .... 2017 - 2018 </p>
+              <p> Laboratoria. </p>    
+              <p> CURSO - AUDITOR INTERNO DE CALIDAD - ISO 9001-2015 2015 - 2015 </p>
+              <p> SGS del Perú Sac </p>
+            </div>
+          </div>              
+        </div>
+        <!--  Tab Herramientas -- >
+        <div id="menu2" class="tab-pane fade">
+          <h3>Herramientas</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <!--  Tab Actitudes -- >
+        <div id="menu3" class="tab-pane fade">
+          <h3>Actitudes</h3>
+          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div> <!-- cierre de tab--content-->
+    </div> <!-- cierre de tab--container-->
